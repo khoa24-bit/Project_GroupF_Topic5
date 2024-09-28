@@ -1,6 +1,37 @@
 /* Header */
 .header {
     height: 120px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+    transition: height 0.8s ease, background-color 0.8s ease;
+}
+
+.header.shrink {
+    height: 70px;
+}
+
+.header__navbar--top {
+    transition: opacity 0.6s ease, visibility 0.6s ease, height 0.6s ease;
+}
+
+.header.shrink .header__navbar--top {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+.header__navbar-logo img {
+    transition: width 0.8s ease, height 0.8s ease;
+}
+
+.header.shrink .header__navbar-logo img {
+    width: 200px;
+    height: 40px;
 }
 
 .header__navbar {
@@ -29,6 +60,7 @@
 .header__navbar-list {
     list-style-type: none;
     padding: 0;
+    margin: 10px 0 0 0;
 }
 
 .header__navbar-item {
@@ -88,7 +120,8 @@
 
 /* Body */
 .container {
-    height: 1000px;
+    margin-top: 140px;
+    height: 2000px;
 }
 
 /* Footer */
