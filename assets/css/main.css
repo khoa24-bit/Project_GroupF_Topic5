@@ -1,4 +1,5 @@
 /* Header */
+
 .header {
     height: 120px;
     position: fixed;
@@ -10,7 +11,9 @@
     transition: height 0.8s ease, background-color 0.8s ease;
 }
 
+
 /* Thu nho khi cuon */
+
 .header.shrink {
     height: 70px;
 }
@@ -19,7 +22,9 @@
     transition: opacity 0.6s ease, visibility 0.6s ease, height 0.6s ease;
 }
 
+
 /* Bo navbar thu 1 khi cuon */
+
 .header.shrink .header__navbar--top {
     opacity: 0;
     visibility: hidden;
@@ -53,7 +58,7 @@
     transition: all 0.4s ease-in-out;
 }
 
-.header__navbar-logo img{
+.header__navbar-logo img {
     width: 300px;
     height: 60px;
     object-fit: cover;
@@ -87,13 +92,13 @@
     color: black;
 }
 
-.header__navbar-item:hover{
+.header__navbar-item:hover {
     color: rgba(26, 26, 26, 0.7);
     cursor: pointer;
     transition: all 0.4s ease-in-out;
 }
 
-.header__navbar-item:hover a{
+.header__navbar-item:hover a {
     color: rgba(26, 26, 26, 0.7);
     cursor: pointer;
     transition: all 0.4s ease-in-out;
@@ -120,13 +125,18 @@
     transform: translateY(-50%);
 }
 
+
 /* Body */
+
 .container {
     margin-top: 140px;
-    height: 2000px;
+    width: 1400px;
+    padding-bottom: 20px;
 }
 
+
 /* Footer */
+
 .footer {
     height: auto;
     padding: 10px 0;
@@ -197,6 +207,7 @@
 
 
 /* Button back to top */
+
 .back-to-top {
     position: fixed;
     bottom: 20px;
@@ -221,7 +232,9 @@
     background-color: #888;
 }
 
+
 /* Hien thi nut cuon trang */
+
 .back-to-top.show {
     opacity: 1;
     visibility: visible;

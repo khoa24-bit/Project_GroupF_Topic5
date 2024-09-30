@@ -5,6 +5,7 @@
     grid-template-columns: repeat(4, 1fr);
     /* 4 cột, mỗi cột 1 sản phẩm */
     gap: 20px;
+    margin-left: 10vw;
 }
 
 .product {
@@ -36,18 +37,19 @@
 
 /* Nút đặt lịch tư vấn, ẩn mặc định */
 
+.button-booking {
+    display: flex;
+    justify-content: center;
+}
+
 .product__btn {
-    position: absolute;
+    display: flex;
     bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
     background-color: #3498db;
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    display: none;
-    transition: all 0.3s ease;
 }
 
 
@@ -57,6 +59,6 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.product:hover .product__btn {
-    display: block;
+.product__btn:hover {
+    background-color: rgb(0, 119, 255);
 }
