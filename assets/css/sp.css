@@ -1,0 +1,62 @@
+/* Bố cục sản phẩm theo dạng lưới */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 cột, mỗi cột 1 sản phẩm */
+    gap: 20px;
+}
+
+.product {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.product__img {
+    width: 100%;
+    height: auto;
+}
+
+.product__name {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.product__price {
+    font-size: 16px;
+    color: #e67e22;
+    margin: 10px 0;
+}
+
+
+/* Nút đặt lịch tư vấn, ẩn mặc định */
+
+.product__btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+
+/* Khi trỏ chuột vào sản phẩm, hiện nút */
+
+.product:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.product:hover .product__btn {
+    display: block;
+}
