@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     gap: 2%;
-    background-image: url(./img/whiteFan.jpg), url(./img/blackFan.jpg);
+    background-image: url(../../assets/img/whiteFan.jpg), url(../../assets/img/blackFan.jpg);
     background-position: 10% 50%, 90% 50%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -83,7 +83,7 @@ input[type="radio"] {
 
 .layout__input {
     flex: 1;
-    background-image: url(./img/bg_input.jpg);
+    background-image: url(../../assets/img/bg_input.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px 5%;
@@ -117,7 +117,7 @@ fieldset {
     width: 200px;
     height: 40px;
     align-self: center;
-    background-image: url(./img/btnResult.png);
+    background-image: url(../../assets/img/btnResult.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -130,7 +130,7 @@ fieldset {
 
 .layout__result {
     flex: 1.5;
-    background-image: url(./img/bg_result.jpg);
+    background-image: url(../..//assets/img/bg_result.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 5%;
