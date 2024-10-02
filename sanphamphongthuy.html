@@ -8,13 +8,16 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.6.0-web/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/sp.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <script defer src="./assets/js/sp.js"></script>
+    <script defer src="./assets/js/main.js"></script>
 </head>
 
 <body>
-    
+
     <div class="app">
         <header class="header">
             <div class="grid">
@@ -69,15 +72,25 @@
             </div>
             <hr>
         </header>
-        
+
         <article class="container">
-            <div class="button-sort-product">
-                <button class="sortAsc">Sắp xếp giá tăng dần</button>
-                <button class="sortDesc">Sắp xếp giá giảm dần</button>
+            <div class="btn-sort">
+                <div class="button-choice-type">
+                    <button class="choice-all">Tất cả</button>
+                    <button class="choice-fish">Cá</button>
+                    <button class="choice-aquarium">Hồ</button>
+                </div>
+                <div class="button-sort-product">
+                    <button class="sortAsc">Sắp xếp giá tăng dần</button>
+                    <button class="sortDesc">Sắp xếp giá giảm dần</button>
+                </div>
+
             </div>
+            <hr class="hr-sort">
+
             <div class="grid-container">
                 <!-- Sản phẩm 1 -->
-                <div class="product">
+                <div class="product" type="fish">
                     <img src="./assets/img/1.png" alt="Product 1" class="product__img">
                     <h3 class="product__name">Sản phẩm phong thủy 1</h3>
                     <p class="product__price">2,000,000 VND</p>
@@ -85,199 +98,145 @@
                         <button class="product__btn">Đặt lịch tư vấn</button>
                     </div>
                 </div>
-
-                <!-- Sản phẩm 2 -->
-                <div class="product">
-                    <img src="./assets/img/2.png" alt="Product 2" class="product__img">
-                    <h3 class="product__name">Sản phẩm phong thủy 2</h3>
-                    <p class="product__price">3,500,000 VND</p>
+                <div class="product" type="aquarium">
+                    <img src="./assets/img/aquarium.jpg" alt="Product 1" class="product__img">
+                    <h3 class="product__name">Sản phẩm phong thủy 1</h3>
+                    <p class="product__price">1,000,000 VND</p>
                     <div class="button-booking">
                         <button class="product__btn">Đặt lịch tư vấn</button>
                     </div>
                 </div>
-
-                <!-- Sản phẩm 3 -->
-                <div class="product">
-                    <img src="./assets/img/3.png" alt="Product 3" class="product__img">
-                    <h3 class="product__name">Sản phẩm phong thủy 3</h3>
-                    <p class="product__price">1,200,000 VND</p>
-                    <button class="product__btn">Đặt lịch tư vấn</button>
-                </div>
-
-                <!-- Sản phẩm 4 -->
-                <div class="product">
-                    <img src="./assets/img/4.png" alt="Product 4" class="product__img">
-                    <h3 class="product__name">Sản phẩm phong thủy 4</h3>
-                    <p class="product__price">4,000,000 VND</p>
-                    <button class="product__btn">Đặt lịch tư vấn</button>
-                </div>
-                <div class="product">
+                <div class="product" type="fish">
                     <img src="./assets/img/1.png" alt="Product 1" class="product__img">
                     <h3 class="product__name">Sản phẩm phong thủy 1</h3>
                     <p class="product__price">2,000,000 VND</p>
-                    <button class="product__btn">Đặt lịch tư vấn</button>
+                    <div class="button-booking">
+                        <button class="product__btn">Đặt lịch tư vấn</button>
+                    </div>
                 </div>
-
-                <!-- Sản phẩm 2 -->
-                <div class="product">
-                    <img src="./assets/img/2.png" alt="Product 2" class="product__img">
-                    <h3 class="product__name">Sản phẩm phong thủy 2</h3>
-                    <p class="product__price">3,500,000 VND</p>
-                    <button class="product__btn">Đặt lịch tư vấn</button>
+                <div class="product" type="aquarium">
+                    <img src="./assets/img/aquarium.jpg" alt="Product 1" class="product__img">
+                    <h3 class="product__name">Sản phẩm phong thủy 1</h3>
+                    <p class="product__price">1,000,000 VND</p>
+                    <div class="button-booking">
+                        <button class="product__btn">Đặt lịch tư vấn</button>
+                    </div>
                 </div>
-
-                <!-- Sản phẩm 3 -->
-                <div class="product">
-                    <img src="./assets/img/3.png" alt="Product 3" class="product__img">
-                    <h3 class="product__name">Sản phẩm phong thủy 3</h3>
-                    <p class="product__price">1,200,000 VND</p>
-                    <button class="product__btn">Đặt lịch tư vấn</button>
-                </div>
-
-                <!-- Sản phẩm 4 -->
-                <div class="product">
-                    <img src="./assets/img/4.png" alt="Product 4" class="product__img">
-                    <h3 class="product__name">Sản phẩm phong thủy 4</h3>
-                    <p class="product__price">4,000,000 VND</p>
-                    <button class="product__btn">Đặt lịch tư vấn</button>
-                </div>
-                <div class="product">
+                <div class="product" type="fish">
                     <img src="./assets/img/1.png" alt="Product 1" class="product__img">
                     <h3 class="product__name">Sản phẩm phong thủy 1</h3>
                     <p class="product__price">2,000,000 VND</p>
-                    <button class="product__btn">Đặt lịch tư vấn</button>
+                    <div class="button-booking">
+                        <button class="product__btn">Đặt lịch tư vấn</button>
+                    </div>
                 </div>
-
-                <!-- Sản phẩm 2 -->
-                <div class="product">
-                    <img src="./assets/img/2.png" alt="Product 2" class="product__img">
-                    <h3 class="product__name">Sản phẩm phong thủy 2</h3>
-                    <p class="product__price">3,500,000 VND</p>
-                    <button class="product__btn">Đặt lịch tư vấn</button>
+                <div class="product" type="aquarium">
+                    <img src="./assets/img/aquarium.jpg" alt="Product 1" class="product__img">
+                    <h3 class="product__name">Sản phẩm phong thủy 1</h3>
+                    <p class="product__price">1,000,000 VND</p>
+                    <div class="button-booking">
+                        <button class="product__btn">Đặt lịch tư vấn</button>
+                    </div>
                 </div>
-
-                <!-- Sản phẩm 3 -->
-                <div class="product">
-                    <img src="./assets/img/3.png" alt="Product 3" class="product__img">
-                    <h3 class="product__name">Sản phẩm phong thủy 3</h3>
-                    <p class="product__price">1,200,000 VND</p>
-                    <button class="product__btn">Đặt lịch tư vấn</button>
-                </div>
-
-                <!-- Sản phẩm 4 -->
-                <div class="product">
-                    <img src="./assets/img/4.png" alt="Product 4" class="product__img">
-                    <h3 class="product__name">Sản phẩm phong thủy 4</h3>
-                    <p class="product__price">4,000,000 VND</p>
-                    <button class="product__btn">Đặt lịch tư vấn</button>
-                </div>
-                <div class="product">
+                <div class="product" type="fish">
                     <img src="./assets/img/1.png" alt="Product 1" class="product__img">
                     <h3 class="product__name">Sản phẩm phong thủy 1</h3>
                     <p class="product__price">2,000,000 VND</p>
-                    <button class="product__btn">Đặt lịch tư vấn</button>
+                    <div class="button-booking">
+                        <button class="product__btn">Đặt lịch tư vấn</button>
+                    </div>
                 </div>
-
-                <!-- Sản phẩm 2 -->
-                <div class="product">
-                    <img src="./assets/img/2.png" alt="Product 2" class="product__img">
-                    <h3 class="product__name">Sản phẩm phong thủy 2</h3>
-                    <p class="product__price">3,500,000 VND</p>
-                    <button class="product__btn">Đặt lịch tư vấn</button>
-                </div>
-
-                <!-- Sản phẩm 3 -->
-                <div class="product">
-                    <img src="./assets/img/3.png" alt="Product 3" class="product__img">
-                    <h3 class="product__name">Sản phẩm phong thủy 3</h3>
-                    <p class="product__price">1,200,000 VND</p>
-                    <button class="product__btn">Đặt lịch tư vấn</button>
-                </div>
-
-                <!-- Sản phẩm 4 -->
-                <div class="product">
-                    <img src="./assets/img/4.png" alt="Product 4" class="product__img">
-                    <h3 class="product__name">Sản phẩm phong thủy 4</h3>
-                    <p class="product__price">4,000,000 VND</p>
-                    <button class="product__btn">Đặt lịch tư vấn</button>
-                </div>
-                <div class="product">
+                <div class="product" type="fish">
                     <img src="./assets/img/1.png" alt="Product 1" class="product__img">
                     <h3 class="product__name">Sản phẩm phong thủy 1</h3>
                     <p class="product__price">2,000,000 VND</p>
-                    <button class="product__btn">Đặt lịch tư vấn</button>
+                    <div class="button-booking">
+                        <button class="product__btn">Đặt lịch tư vấn</button>
+                    </div>
                 </div>
-
-                <!-- Sản phẩm 2 -->
-                <div class="product">
-                    <img src="./assets/img/2.png" alt="Product 2" class="product__img">
-                    <h3 class="product__name">Sản phẩm phong thủy 2</h3>
-                    <p class="product__price">3,500,000 VND</p>
-                    <button class="product__btn">Đặt lịch tư vấn</button>
+                <div class="product" type="aquarium">
+                    <img src="./assets/img/aquarium.jpg" alt="Product 1" class="product__img">
+                    <h3 class="product__name">Sản phẩm phong thủy 1</h3>
+                    <p class="product__price">1,000,000 VND</p>
+                    <div class="button-booking">
+                        <button class="product__btn">Đặt lịch tư vấn</button>
+                    </div>
                 </div>
-
-                <!-- Sản phẩm 3 -->
-                <div class="product">
-                    <img src="./assets/img/3.png" alt="Product 3" class="product__img">
-                    <h3 class="product__name">Sản phẩm phong thủy 3</h3>
-                    <p class="product__price">1,200,000 VND</p>
-                    <button class="product__btn">Đặt lịch tư vấn</button>
+                <div class="product" type="fish">
+                    <img src="./assets/img/1.png" alt="Product 1" class="product__img">
+                    <h3 class="product__name">Sản phẩm phong thủy 1</h3>
+                    <p class="product__price">2,000,000 VND</p>
+                    <div class="button-booking">
+                        <button class="product__btn">Đặt lịch tư vấn</button>
+                    </div>
                 </div>
-
-                <!-- Sản phẩm 4 -->
-                <div class="product">
-                    <img src="./assets/img/4.png" alt="Product 4" class="product__img">
-                    <h3 class="product__name">Sản phẩm phong thủy 4</h3>
-                    <p class="product__price">4,000,000 VND</p>
-                    <button class="product__btn">Đặt lịch tư vấn</button>
+                <div class="product" type="fish">
+                    <img src="./assets/img/1.png" alt="Product 1" class="product__img">
+                    <h3 class="product__name">Sản phẩm phong thủy 1</h3>
+                    <p class="product__price">2,000,000 VND</p>
+                    <div class="button-booking">
+                        <button class="product__btn">Đặt lịch tư vấn</button>
+                    </div>
+                </div>
+                <div class="product" type="aquarium">
+                    <img src="./assets/img/aquarium.jpg" alt="Product 1" class="product__img">
+                    <h3 class="product__name">Sản phẩm phong thủy 1</h3>
+                    <p class="product__price">1,000,000 VND</p>
+                    <div class="button-booking">
+                        <button class="product__btn">Đặt lịch tư vấn</button>
+                    </div>
                 </div>
             </div>
 
-        </article>
 
-        <footer class="footer">
-            <div class="grid">
-                <nav class="footer__navbar">
-                    <ul class="footer__navbar-list">
-                        <li class="footer__navbar-item footer__navbar-item--separate">Copyright 2024 Feng Shui KOI</li>
-                        <li class="footer__navbar-item footer__navbar-item--separate">
-                            <a href="" class="footer__navbar-icon-link">
-                                <i class="fa-solid fa-shield-halved"></i> Privacy Policy
-                            </a>
-                        </li>
-                        <li class="footer__navbar-item">
-                            <a href="" class="footer__navbar-icon-link">
-                                <i class="fa-solid fa-phone"></i> Contact us
-                            </a>
-                        </li>
-                    </ul>
 
-                    <ul class="footer__navbar-list">
-                        <li class="footer__navbar-item">
-                            <a href="" class="footer__navbar-icon-link">
-                                <i class="footer__navbar-icon fa-brands fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="footer__navbar-item">
-                            <a href="" class="footer__navbar-icon-link">
-                                <i class="footer__navbar-icon fa-brands fa-x-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="footer__navbar-item">
-                            <a href="" class="footer__navbar-icon-link">
-                                <i class="footer__navbar-icon fa-brands fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </footer>
+    </div>
+
+    </article>
+
+    <footer class="footer">
+        <div class="grid">
+            <nav class="footer__navbar">
+                <ul class="footer__navbar-list">
+                    <li class="footer__navbar-item footer__navbar-item--separate">Copyright 2024 Feng Shui KOI</li>
+                    <li class="footer__navbar-item footer__navbar-item--separate">
+                        <a href="" class="footer__navbar-icon-link">
+                            <i class="fa-solid fa-shield-halved"></i> Privacy Policy
+                        </a>
+                    </li>
+                    <li class="footer__navbar-item">
+                        <a href="" class="footer__navbar-icon-link">
+                            <i class="fa-solid fa-phone"></i> Contact us
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="footer__navbar-list">
+                    <li class="footer__navbar-item">
+                        <a href="" class="footer__navbar-icon-link">
+                            <i class="footer__navbar-icon fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="footer__navbar-item">
+                        <a href="" class="footer__navbar-icon-link">
+                            <i class="footer__navbar-icon fa-brands fa-x-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="footer__navbar-item">
+                        <a href="" class="footer__navbar-icon-link">
+                            <i class="footer__navbar-icon fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
     </div>
     <button id="backToTop" class="back-to-top">
         <i class="fa-solid fa-arrow-up"></i>
     </button>
-    <script src="./assets/js/sort.js"></script>
+
 </body>
-<script src="./assets/js/main.js"></script>
+
 
 </html>
