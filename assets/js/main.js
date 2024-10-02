@@ -21,7 +21,6 @@ window.addEventListener('scroll', function() {
         backToTopButton.classList.remove('show');
     }
 });
-
 // Hieu ung muot ma
 document.getElementById('backToTop').addEventListener('click', function() {
     window.scrollTo({
