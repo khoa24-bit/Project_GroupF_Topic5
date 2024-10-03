@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
     /* Body */
     
     .container {
@@ -127,3 +128,309 @@
         margin-left: 10vw;
         margin-bottom: 20px;
     }
+=======
+/* Header */
+
+.header {
+    height: 120px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+    transition: height 0.8s ease, background-color 0.8s ease;
+}
+
+
+/* Thu nho khi cuon */
+
+.header.shrink {
+    height: 70px;
+}
+
+.header__navbar--top {
+    transition: opacity 0.6s ease, visibility 0.6s ease, height 0.6s ease;
+}
+
+
+/* Bo navbar thu 1 khi cuon */
+
+.header.shrink .header__navbar--top {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+.header__navbar-logo img {
+    transition: width 0.8s ease, height 0.8s ease;
+}
+
+.header.shrink .header__navbar-logo img {
+    width: 200px;
+    height: 40px;
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header__navbar-search {
+    font-size: 20px;
+}
+
+.header__navbar-search:hover {
+    color: rgba(26, 26, 26, 0.7);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.header__navbar-logo img {
+    width: 300px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.header__navbar-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.header__navbar-item {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: black;
+    margin: 0 5px;
+    position: relative;
+}
+
+.header__navbar-item-left {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: black;
+    margin: 0 5px;
+    position: relative;
+    text-decoration: none;
+}
+
+.header__navbar-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.header__navbar-item:hover {
+    color: rgba(26, 26, 26, 0.7);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.header__navbar-item:hover a {
+    color: rgba(26, 26, 26, 0.7);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.header__navbar-item--bold {
+    font-weight: 550;
+}
+
+.header__navbar-item--strong {
+    font-weight: 750;
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+
+.header__navbar-item--separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid black;
+    height: 14px;
+    right: -7px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* Body */
+
+.container {
+    margin-top: 140px;
+    width: 1400px;
+    padding-bottom: 20px;
+}
+
+
+/* Footer */
+
+.footer {
+    height: auto;
+    padding: 10px 0;
+    background-color: black;
+}
+
+.footer__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer__navbar-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer__navbar-item {
+    font-size: 1.6rem;
+    color: white;
+    margin: 0 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.footer__navbar-icon {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.footer__navbar-icon-link {
+    padding-left: 3px;
+}
+
+.footer__navbar-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer__navbar-item p {
+    line-height: 1.4rem;
+    padding: 0 5px;
+}
+
+.footer__navbar-item:hover a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.4s ease-in-out;
+}
+
+.footer__navbar-item--bold {
+    font-weight: 550;
+}
+
+.footer__navbar-item--separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid white;
+    height: 14px;
+    right: -7px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* Button back to top */
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #888;
+}
+
+
+/* Hien thi nut cuon trang */
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 cột, mỗi cột 1 sản phẩm */
+    gap: 20px;
+    margin-left: 10vw;
+}
+
+.product {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.product__img {
+    width: 100%;
+    height: auto;
+}
+
+.product__name {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.product__price {
+    font-size: 16px;
+    color: #e67e22;
+    margin: 10px 0;
+}
+
+
+/* Nút đặt lịch tư vấn, ẩn mặc định */
+
+.button-booking {
+    display: flex;
+    justify-content: center;
+}
+
+.product__btn {
+    display: flex;
+    bottom: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+/* Khi trỏ chuột vào sản phẩm, hiện nút */
+
+.product:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.product__btn:hover {
+    background-color: rgb(0, 119, 255);
+}
+>>>>>>> Stashed changes
