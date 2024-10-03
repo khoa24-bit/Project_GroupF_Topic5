@@ -21,6 +21,7 @@
         text-align: center;
         transition: box-shadow 0.3s ease;
         background-color: #fff;
+        border-radius: 10px;
     }
     
     .product__img {
@@ -54,6 +55,7 @@
         border: none;
         padding: 10px 20px;
         cursor: pointer;
+        border-radius: 10px;
     }
     /* Khi trỏ chuột vào sản phẩm, hiện nút */
     
